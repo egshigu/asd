@@ -1,0 +1,155 @@
+/* --- Global Styles --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa; /* Light background for clean look */
+    color: #333;
+    line-height: 1.6;
+}
+
+section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #1a237e; /* A deep blue/indigo for professionalism */
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1a237e;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #ff6f00; /* A contrasting accent color (orange/amber) */
+}
+
+/* --- Buttons --- */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px 10px 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.primary-button {
+    background-color: #1a237e;
+    color: #ffffff;
+    border: 2px solid #1a237e;
+}
+
+.primary-button:hover {
+    background-color: #0d124b;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #1a237e;
+    border: 2px solid #1a237e;
+}
+
+.secondary-button:hover {
+    background-color: #1a237e;
+    color: #ffffff;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-color: #e8eaf6; /* Lighter shade of the primary color */
+    text-align: center;
+    padding: 100px 5%;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* --- Portfolio Grid --- */
+.portfolio-grid {
+    text-align: center;
+}
+
+.portfolio-grid h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.case-study {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.case-study img {
+    width: 100%; /* Important for showcasing product screenshots */
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.case-study h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+/* Use a two-column layout for larger screens */
+@media (min-width: 768px) {
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .portfolio-grid h2 {
+        grid-column: 1 / -1; /* Make the heading span both columns */
+    }
+}
+
+/* --- Contact & Footer --- */
+.contact {
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 5%;
+    background-color: #1a237e;
+    color: #ffffff;
+    font-size: 0.9em;
+}
